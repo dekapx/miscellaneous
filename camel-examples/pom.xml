@@ -17,13 +17,19 @@
 	</properties>
 
 	<modules>
-		<module>file-component</module>
+		<module>camel-file-copy-java</module>
+		<module>camel-file-copy-config</module>
 	</modules>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-core</artifactId>
+			<version>${camel-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring</artifactId>
 			<version>${camel-version}</version>
 		</dependency>
 
@@ -57,6 +63,12 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
+			
+					<plugin>
+						<groupId>org.apache.camel</groupId>
+						<artifactId>camel-maven-plugin</artifactId>
+						<version>${camel-version}</version>
+					</plugin>			
 		</plugins>
 	</build>
 
