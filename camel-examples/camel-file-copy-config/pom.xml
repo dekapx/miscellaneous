@@ -9,18 +9,4 @@
 
 	<artifactId>camel-file-copy-config</artifactId>
 	<name>Apache Camel File Component example</name>
-
-<!-- 	<build>
-		<plugins>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.camel</groupId>
-						<artifactId>camel-maven-plugin</artifactId>
-						<version>${camel-version}</version>
-					</plugin>
-				</plugins>
-			</build>
-		</plugins>
-	</build> -->
 </project>
