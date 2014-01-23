@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringMain {
 	public static void main(String[] args) throws Exception {
-		final AbstractApplicationContext springContext = new ClassPathXmlApplicationContext("META-INF/spring/move-file-context.xml");
+		final AbstractApplicationContext springContext = new ClassPathXmlApplicationContext("META-INF/spring/application-context.xml");
 
 		springContext.start();
 		Thread.sleep(100000);
