@@ -1,45 +1,22 @@
 package com.kapx.java7.concurrency.join;
 
-import java.util.concurrent.TimeUnit;
-
 public class ThreadJoinTest {
-	private Runnable runnable = new Runnable() {
+	public static void main(String[] args) throws Exception {
+		Runnable taskA = new TaskA();
+		Thread taskAExecutor = new Thread(taskA);
+		taskAExecutor.start();
+		taskAExecutor.join();
 
-		@Override
-		public void run() {
-			for (int i = 0; i < 5; i++) {
-				System.out.print("[ " + Thread.currentThread().getName() + "-" + i + " ]");
-				try {
-					TimeUnit.SECONDS.sleep(1);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-	};
+		Runnable taskB = new TaskB();
+		Thread taskBExecutor = new Thread(taskB);
+		taskBExecutor.start();
+		taskBExecutor.join();
 
-	public void test() throws Exception {
-		final Thread x = new Thread(runnable);
-		x.setName("X");
-		x.start();
+		Runnable taskC = new TaskC();
+		Thread taskCExecutor = new Thread(taskC);
+		taskCExecutor.start();
+		taskCExecutor.join();
 
-		final Thread y = new Thread(runnable);
-		y.setName("Y");
-		y.start();
-
-		y.join();
-
-		for (int i = 1; i <= 5; i++) {
-			System.out.print("(" + i + ")");
-			TimeUnit.SECONDS.sleep(1);
-		}
-	}
-
-	public static void main(String[] args) {
-		try {
-			new ThreadJoinTest().test();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		System.out.println("\nAll tasks completed...");
 	}
 }
