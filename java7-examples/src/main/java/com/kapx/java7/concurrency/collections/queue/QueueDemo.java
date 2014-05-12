@@ -15,13 +15,13 @@ public class QueueDemo {
 		System.out.println("LinkedList demo...");
 		final Queue<String> queue = new LinkedList<String>();
 
+		queue.offer("Z");
+		System.out.println(queue);
+
 		queue.offer("X");
 		System.out.println(queue);
 
 		queue.offer("Y");
-		System.out.println(queue);
-
-		queue.offer("Z");
 		System.out.println(queue);
 
 		System.out.println(queue.poll() + "->" + queue);
@@ -33,13 +33,13 @@ public class QueueDemo {
 		System.out.println("PriorityQueue demo...");
 		final Queue<String> queue = new PriorityQueue<String>();
 
+		queue.offer("Z");
+		System.out.println(queue);
+
 		queue.offer("X");
 		System.out.println(queue);
 
 		queue.offer("Y");
-		System.out.println(queue);
-
-		queue.offer("Z");
 		System.out.println(queue);
 
 		System.out.println(queue.poll() + "->" + queue);
