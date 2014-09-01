@@ -10,6 +10,8 @@
 		<java.version>1.7</java.version>
 		<guava.version>r09</guava.version>
 		<joda-time.version>2.4</joda-time.version>
+		<commons-collections4.version>4.0</commons-collections4.version>
+
 		<junit.version>4.11</junit.version>
 		<version.mockito>1.9.5</version.mockito>
 		<version.powermock.module>1.5</version.powermock.module>
@@ -38,6 +40,12 @@
 			<groupId>javassist</groupId>
 			<artifactId>javassist</artifactId>
 			<version>${javassist.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>${commons-collections4.version}</version>
 		</dependency>
 
 		<dependency>
