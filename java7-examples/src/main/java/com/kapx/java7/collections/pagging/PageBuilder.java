@@ -3,9 +3,10 @@ package com.kapx.java7.collections.pagging;
 import java.util.List;
 
 /**
- * Utility class enable pagging over a collection.
+ * Generic pagination utility class enable paging over a collection.
  * 
- * @author xkapil
+ * @author Kapil Kumar
+ * @Version 1.0
  *
  * @param <T>
  *            type of the collection.
@@ -26,7 +27,7 @@ public class PageBuilder<T> {
 
 	private int maxPages;
 
-	public PageBuilder(List<T> list, int pageSize) {
+	public PageBuilder(final List<T> list, final int pageSize) {
 		this.list = list;
 		this.page = 1;
 		this.maxPages = 1;
@@ -61,7 +62,7 @@ public class PageBuilder<T> {
 		return this.page;
 	}
 
-	public void setPage(int p) {
+	public void setPage(final int p) {
 		if (p >= maxPages) {
 			this.page = maxPages;
 		} else if (p <= 1) {
@@ -70,10 +71,11 @@ public class PageBuilder<T> {
 			this.page = p;
 		}
 
-		startingIndex = pageSize * (page - 1);
+		startingIndex = pageSize * (this.page - 1);
 		if (startingIndex < 0) {
 			startingIndex = 0;
 		}
+
 		endingIndex = startingIndex + pageSize;
 		if (endingIndex > list.size()) {
 			endingIndex = list.size();

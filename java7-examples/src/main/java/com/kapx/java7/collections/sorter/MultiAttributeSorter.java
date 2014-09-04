@@ -8,7 +8,7 @@ import java.util.List;
 import org.apache.commons.collections4.comparators.ComparatorChain;
 
 /**
- * Generic sorter utility that performs ascending and descending sorting on multiple attributes of a Java POJO.
+ * Generic sorter utility class that performs ascending and descending sorting on multiple attributes of a Java POJO.
  * 
  * @author Kapil Kumar
  * @Version 1.0
