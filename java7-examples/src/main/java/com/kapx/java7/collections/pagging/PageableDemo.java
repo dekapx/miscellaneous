@@ -11,14 +11,17 @@ public class PageableDemo {
 			students.add(student);
 		}
 
-		final PageBuilder<Student> pageable = new PageBuilder<Student>(students, 21);
-		final int maxPages = pageable.getMaxPages();
-		System.out.println("MaxPages: " + maxPages);
+		final PageBuilder<Student> pageBuilder = new PageBuilder<Student>(students, 10);
+		final int maxPages = pageBuilder.getMaxPages();
+
+		System.out.println("Max Pages: " + maxPages);
+		System.out.println("Min Page Range: " + pageBuilder.getMinPageRange());
+		System.out.println("Max Page Range: " + pageBuilder.getMaxPageRange());
 
 		for (int i = 1; i <= maxPages; i++) {
-			pageable.setPage(i);
+			pageBuilder.setPage(i);
 
-			List<Student> subList = pageable.getListForPage();
+			List<Student> subList = pageBuilder.getListForPage();
 			for (Student student : subList) {
 				System.out.println(student);
 			}
