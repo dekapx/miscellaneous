@@ -1,4 +1,4 @@
-package com.kapx.java7.sorter;
+package com.kapx.java7.collections.sorter;
 
 public class Student {
 	private int studentId;

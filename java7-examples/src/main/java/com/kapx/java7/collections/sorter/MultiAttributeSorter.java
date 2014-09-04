@@ -1,4 +1,4 @@
-package com.kapx.java7.sorter;
+package com.kapx.java7.collections.sorter;
 
 import java.lang.reflect.Method;
 import java.util.Collections;
