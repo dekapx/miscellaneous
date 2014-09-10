@@ -12,13 +12,14 @@ public class MultiAttributeSorterTest {
 	private static void multiColumnSort() {
 		List<Student> records = getObjects();
 		List<String> attributes = new LinkedList<String>();
-		attributes.add("firstName");
-		// attributes.add("lastName");
+		// attributes.add("firstName");
+		attributes.add("lastName");
 		// attributes.add("marks");
 
 		// display(records);
 		System.out.println("//------------------------------------------------------------//");
 		long start = System.nanoTime();
+		// Ascending (false), Descending (true)
 		MultiAttributeSorter.sort(records, attributes, false);
 		long end = System.nanoTime();
 		System.out.println("elapsed (ms)=" + ((end - start) / 1000000));
