@@ -18,6 +18,6 @@ public class DateUtil {
 		}
 
 		final DateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT);
-		return dateFormat.format(new Date());
+		return dateFormat.format(date);
 	}
 }
