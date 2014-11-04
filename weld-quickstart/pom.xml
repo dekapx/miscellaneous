@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.kapx.weld.cdi</groupId>
-	<artifactId>weld-basic-example</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>weld-basic-example</name>
+	<groupId>com.ericsson.jse.di.weld</groupId>
+	<artifactId>weld-quickstart</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
+	<name>weld-quickstart</name>
 
 	<properties>
 		<java.version>1.7</java.version>
@@ -13,7 +13,7 @@
 	</properties>
 
 	<dependencies>
-   		<dependency>
+		<dependency>
 			<groupId>org.jboss.weld</groupId>
 			<artifactId>weld-core</artifactId>
 			<version>${weld.version}</version>
@@ -23,7 +23,7 @@
 			<groupId>org.jboss.weld.se</groupId>
 			<artifactId>weld-se-core</artifactId>
 			<version>${weld.version}</version>
-		</dependency>	
+		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -43,7 +43,7 @@
 					<mainClass>org.jboss.weld.environment.se.StartMain</mainClass>
 				</configuration>
 			</plugin>
-					
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
