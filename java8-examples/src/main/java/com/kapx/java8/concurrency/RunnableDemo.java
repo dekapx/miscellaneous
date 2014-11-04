@@ -2,11 +2,33 @@ package com.kapx.java8.concurrency;
 
 public class RunnableDemo {
 	public static void main(String[] args) {
-		Runnable r1 = () -> {
+		final RunnableDemo demo = new RunnableDemo();
+		demo.runnableJava8Style();
+		demo.runnableJava7Style();
+	}
+
+	public void runnableJava8Style() {
+		Runnable runnable = () -> {
+			System.out.println("Java8 - running in a thread...");
 			for (int i = 0; i < 5; i++) {
-				System.out.println("running in a thread...");
+				System.out.print("X ");
 			}
 		};
-		new Thread(r1).start();
+
+		new Thread(runnable).start();
+	}
+
+	public void runnableJava7Style() {
+		Runnable runnable = new Runnable() {
+			@Override
+			public void run() {
+				System.out.println("Java7 - running in a thread...");
+				for (int i = 0; i < 5; i++) {
+					System.out.print("Y ");
+				}
+			}
+		};
+
+		new Thread(runnable).start();
 	}
 }
