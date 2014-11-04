@@ -22,12 +22,4 @@ public class TaskExecuter {
 			throw new Exception(e);
 		}
 	}
-
-	public static void main(String[] args) throws Exception {
-		final TaskExecuter executer = new TaskExecuter();
-		final int[] numbers = { 1, 2, 3, 4, 5 };
-
-		final Integer result = executer.execute(numbers);
-		System.out.println(result);
-	}
 }
