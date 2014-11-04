@@ -5,8 +5,8 @@ import com.kapx.java7.serviceloader.service.HelloService;
 public class HelloServiceImpl implements HelloService {
 
 	@Override
-	public String sayHello(final String arg0) {
-		return "Hello !!! " + arg0;
+	public String sayHello(final String arg) {
+		return "Hello !!! " + arg;
 	}
 
 }

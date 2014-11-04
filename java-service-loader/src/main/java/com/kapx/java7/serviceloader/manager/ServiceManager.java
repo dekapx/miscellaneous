@@ -17,13 +17,13 @@ public class ServiceManager {
 		if (clazz == null) {
 			throw new IllegalArgumentException("Unable to find implementation for null class");
 		}
-		
-		ServiceLoader<T> serviceLoader = ServiceLoader.load(clazz);
+
+		final ServiceLoader<T> serviceLoader = ServiceLoader.load(clazz);
 		final Iterator iter = serviceLoader.iterator();
 		if (iter == null) {
 			throw new IllegalStateException("Was not able to find any implementation for [" + clazz + "]. Please check your packaging!");
 		}
-		
+
 		int count = 0;
 		Object impl = null;
 		while (iter.hasNext()) {
@@ -36,7 +36,7 @@ public class ServiceManager {
 		if (count > 1) {
 			// logger.warn("Found {} implementations of {}. Will use the latest one found {}", new Object[] { count, clazz, impl });
 		}
-		
+
 		return (T) impl;
 	}
 }
