@@ -57,5 +57,6 @@
 	</build>
 	<modules>
 		<module>weld-basic</module>
+		<module>weld-autowire</module>
 	</modules>
 </project>
