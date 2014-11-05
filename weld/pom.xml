@@ -58,5 +58,6 @@
 	<modules>
 		<module>weld-basic</module>
 		<module>weld-autowire</module>
+		<module>weld-named-annotation</module>
 	</modules>
 </project>
