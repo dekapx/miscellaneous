@@ -17,7 +17,7 @@ public enum BeanFactory {
 	private BeanManager beanManager;
 
 	BeanFactory() {
-		WeldContainer weldContainer = new Weld().initialize();
+		final WeldContainer weldContainer = new Weld().initialize();
 		beanManager = weldContainer.getBeanManager();
 	}
 
