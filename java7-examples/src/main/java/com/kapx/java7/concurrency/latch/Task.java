@@ -19,7 +19,7 @@ public class Task implements Runnable {
 		for (int i = 0; i < 5; i++) {
 			try {
 				System.out.print(i + " ");
-				TimeUnit.SECONDS.sleep(5);
+				TimeUnit.SECONDS.sleep(2);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
