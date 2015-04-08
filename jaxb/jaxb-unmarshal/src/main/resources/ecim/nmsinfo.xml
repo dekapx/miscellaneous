@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UpgradePackage name="informative human readable identifier of the package (árvíztűrő tükörfúrógép)" xsi:noNamespaceSchemaLocation=".\nmsinfo.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ManagedElementTypes>
+                <ManagedElementType platform="platform1 (árvíztűrő tükörfúrógép)" productDesignation="productDesignation1 (árvíztűrő tükörfúrógép)" productNumber="productNumber1 (árvíztűrő tükörfúrógép)" productRevision="productRevision1 (árvíztűrő tükörfúrógép)"/>
+                <ManagedElementType platform="platform2 (ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP)" productDesignation="productDesignation2 (ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP)" productNumber="productNumber2 (ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP)" productRevision="productRevision2 (ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP)"/>
+        </ManagedElementTypes>
+
+        <UpgradePackageContent>
+                <ProductData productName="productName1 (árvíztűrő tükörfúrógép)" productNumber="productNumber1 (árvíztűrő tükörfúrógép)" productRevision="productRevision1 (árvíztűrő tükörfúrógép)" productionDate="1983-02-10T04:30:10-03:00" description="description1 (árvíztűrő tükörfúrógép)" type="type1 (árvíztűrő tükörfúrógép)"/>
+                <ProductData productName="productName2 (ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP)" productNumber="productNumber2 (ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP)" productRevision="productRevision2 (ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP)" productionDate="1983-02-10T19:30:10-06:00" description="description2 (ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP)" type="type2 (ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP)"/>
+        </UpgradePackageContent>
+        
+		<NmsContent>
+                <Content type="type1 (árvíztűrő tükörfúrógép)" path="path1 (árvíztűrő tükörfúrógép)"/>
+                <Content type="type2 (ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP)" path="path2 (ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP)"/>
+        </NmsContent>
+</UpgradePackage>
+
