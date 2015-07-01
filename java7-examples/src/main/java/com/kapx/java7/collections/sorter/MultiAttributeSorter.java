@@ -35,7 +35,7 @@ public class MultiAttributeSorter {
 	 *            order of sorting
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public static void sort(List objects, final List attributes, final boolean reverse) {
+	public static void sort(final List objects, final List attributes, final boolean reverse) {
 		final ComparatorChain chain = new ComparatorChain();
 		chain.addComparator(new Comparator() {
 			@Override
@@ -47,11 +47,11 @@ public class MultiAttributeSorter {
 		Collections.sort(objects, chain);
 	}
 
-	private static int applySort(Object object1, Object object2, List<String> attributes) {
+	private static int applySort(final Object object1, final Object object2, final List<String> attributes) {
 		return getCompareValueByIndex(object1, object2, attributes, 0);
 	}
 
-	private static int getCompareValueByIndex(Object object1, Object object2, List<String> attributes, int index) {
+	private static int getCompareValueByIndex(final Object object1, final Object object2, final List<String> attributes, final int index) {
 		int value = -1;
 
 		final String element = attributes.get(index);
@@ -66,7 +66,7 @@ public class MultiAttributeSorter {
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	private static int getCompareValue(Object object1, Object object2, String attribute) {
+	private static int getCompareValue(final Object object1, final Object object2, final String attribute) {
 		int value = -1;
 
 		try {
@@ -94,20 +94,20 @@ public class MultiAttributeSorter {
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	private static int handleComparator(Object result1, Object result2) {
+	private static int handleComparator(final Object result1, final Object result2) {
 		final Comparator comparator1 = (Comparator) result1;
 		final Comparator comparator2 = (Comparator) result2;
 		return comparator1.compare(comparator1, comparator2);
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	private static int handleComparable(Object result1, Object result2) {
+	private static int handleComparable(final Object result1, final Object result2) {
 		final Comparable comparator1 = (Comparable) result1;
 		final Comparable comparator2 = (Comparable) result2;
 		return comparator1.compareTo(comparator2);
 	}
 
-	private static int handlePrimitive(int value, Object result1, Object result2) {
+	private static int handlePrimitive(int value, final Object result1, final Object result2) {
 		long f1 = ((Number) result1).longValue();
 		long f2 = ((Number) result2).longValue();
 
@@ -120,7 +120,7 @@ public class MultiAttributeSorter {
 		return value;
 	}
 
-	private final static String constructMethodName(String name) {
+	private final static String constructMethodName(final String name) {
 		final StringBuilder builder = new StringBuilder(GET_TAG);
 		builder.append(name.substring(0, 1).toUpperCase());
 		builder.append(name.substring(1));

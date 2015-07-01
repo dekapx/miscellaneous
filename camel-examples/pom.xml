@@ -10,7 +10,7 @@
 	<properties>
 		<java.version>1.7</java.version>
 
-		<camel.version>2.12.2</camel.version>
+		<camel.version>2.15.2</camel.version>
 		<activemq.version>5.7.0</activemq.version>
 		<xbean-spring.version>3.16</xbean-spring.version>
 
