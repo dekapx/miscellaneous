@@ -1,4 +1,4 @@
-package com.kapx.jse7.concurrency.callable;
+package com.kapx.jse.concurrency.callable;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -8,6 +8,8 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import com.kapx.jse.concurrency.callable.TaskExecuter;
 
 public class TaskExecuterTest {
 	private TaskExecuter taskExecuter;

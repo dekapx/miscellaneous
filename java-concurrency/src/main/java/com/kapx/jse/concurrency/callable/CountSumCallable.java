@@ -1,4 +1,4 @@
-package com.kapx.jse7.concurrency.callable;
+package com.kapx.jse.concurrency.callable;
 
 import java.util.Arrays;
 import java.util.concurrent.Callable;

@@ -1,4 +1,4 @@
-package com.kapx.jse7.concurrency.callable;
+package com.kapx.jse.concurrency.callable;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

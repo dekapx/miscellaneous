@@ -1,4 +1,4 @@
-package com.kapx.jse7.concurrency.basics;
+package com.kapx.jse.concurrency.basics;
 
 public class BankAccount {
 	private double balance;

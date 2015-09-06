@@ -1,11 +1,11 @@
-package com.kapx.jse7.concurrency.basics;
+package com.kapx.jse.concurrency.basics;
 
 import java.util.concurrent.TimeUnit;
 
-public class Withdrawer implements Runnable {
+public class Depositor implements Runnable {
 	private BankAccount bankAccount;
 
-	public Withdrawer(final BankAccount bankAccount) {
+	public Depositor(final BankAccount bankAccount) {
 		this.bankAccount = bankAccount;
 	}
 
@@ -19,8 +19,9 @@ public class Withdrawer implements Runnable {
 				e.printStackTrace();
 			}
 
-			System.out.println("withdraw 1000...");
-			this.bankAccount.withdraw(amount);
+			System.out.println("deposite 1000...");
+			this.bankAccount.deposite(amount);
 		}
 	}
+
 }
