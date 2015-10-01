@@ -1,0 +1,1 @@
+Premain-Class: com.kapx.java8.instrumentation.InstrumentationAgent

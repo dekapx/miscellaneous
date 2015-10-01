@@ -10,7 +10,7 @@ public class CountSumCallable implements Callable<Integer> {
 		if (numbers == null || numbers.length <= 0) {
 			throw new IllegalArgumentException("Numbers must not be null or blank");
 		}
-
+		// use copy to avoid the direct reference...
 		this.numbers = Arrays.copyOf(numbers, numbers.length);
 	}
 
