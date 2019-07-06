@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<consistencyGroupSnapshotType xmlns="urn:didata.com:api:cloud:types" journalUsage="100" protectionWindow="2016-06-01T15:45:11.627+01:00" predictedProtectionWindow="2016-06-01T15:45:11.666+01:00">
+    <snapshotType snapshotId="1" snapshotDate="2016-06-01T15:45:11.669+01:00" sizeInBytes="100"/>
+</consistencyGroupSnapshotType>

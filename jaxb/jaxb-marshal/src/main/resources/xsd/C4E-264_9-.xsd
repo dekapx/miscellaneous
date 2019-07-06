@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="urn:didata.com:api:cloud:types"
+	xmlns:cloudapi="urn:didata.com:api:cloud:types" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="unqualified"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="1.0">
+	
+	<xs:complexType name="ConsistencyGroupSnapshotType">
+		<xs:sequence>
+			<xs:element name="snapshotType" type="cloudapi:SnapshotType" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="journalUsage" type="xs:int" />
+		<xs:attribute name="protectionWindow" type="xs:dateTime" />
+		<xs:attribute name="predictedProtectionWindow" type="xs:dateTime" />
+	</xs:complexType>
+
+	<xs:complexType name="SnapshotType">
+		<xs:attribute name="snapshotId" type="xs:string" use="required" />
+		<xs:attribute name="snapshotDate" type="xs:dateTime" use="required" />
+		<xs:attribute name="sizeInBytes" type="xs:int" use="required" />
+	</xs:complexType>
+</xs:schema>

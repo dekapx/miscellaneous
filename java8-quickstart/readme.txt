@@ -1,0 +1,5 @@
+- Functional Interface -
+- An interface with exactly one abstract method is called Functional Interface.
+- @FunctionalInterface annotation is added so that we can mark an interface as functional interface.
+- Use lambda expressions to instantiate them and avoid using bulky anonymous class implementation.
+--------------------------------------------------------------------------------------------------------------

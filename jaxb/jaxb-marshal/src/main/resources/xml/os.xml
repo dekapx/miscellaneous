@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<operatingSystems xmlns="urn:didata.com:api:cloud:types" pageNumber="1" pageCount="1" totalCount="2" pageSize="2">
+    <operatingSystem id="CENTOS532" family="UNIX">
+        <displayName>CENTOS5/64</displayName>
+        <networkAdapter name="E1000" default="true"/>
+        <networkAdapter name="E2000" default="false"/>
+    </operatingSystem>
+    <operatingSystem id="WIN2008R2E64" family="WINDOWS">
+        <displayName>WIN2008R2E/64</displayName>
+        <networkAdapter name="E1000" default="true"/>
+        <networkAdapter name="E2000" default="false"/>
+    </operatingSystem>
+</operatingSystems>

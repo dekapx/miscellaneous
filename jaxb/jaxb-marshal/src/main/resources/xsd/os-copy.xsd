@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="urn:didata.com:api:cloud:types"
+	xmlns:cloudapi="urn:didata.com:api:cloud:types" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="unqualified"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="1.0">
+
+    <xs:element name="operatingSystems">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="operatingSystem" type="cloudapi:OperatingSystemType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attributeGroup ref="cloudapi:PagedResultAttributes"/>
+        </xs:complexType>
+    </xs:element>	
+
+	<xs:complexType name="OperatingSystemType">
+		<xs:sequence>
+			<xs:element name="displayName" type="xs:string" />
+			<xs:element name="networkAdapter" type="cloudapi:NetworkAdapterType"
+				minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" />
+		<xs:attribute name="family" type="xs:string" />
+	</xs:complexType>
+
+	<xs:complexType name="NetworkAdapterType">
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="default" type="xs:boolean" use="required" />
+	</xs:complexType>
+	
+    <xs:attributeGroup name="PagedResultAttributes">
+        <xs:attribute name="pageNumber" type="xs:int"/>
+        <xs:attribute name="pageCount" type="xs:int"/>
+        <xs:attribute name="totalCount" type="xs:int"/>
+        <xs:attribute name="pageSize" type="xs:int"/>
+    </xs:attributeGroup>	
+
+</xs:schema>
