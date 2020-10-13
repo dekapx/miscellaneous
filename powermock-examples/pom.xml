@@ -8,7 +8,7 @@
 
 	<properties>
 		<version.java>1.7</version.java>
-		<version.junit>4.11</version.junit>
+		<version.junit>4.13.1</version.junit>
 		<version.mockito>1.9.5</version.mockito>
 		<version.powermock.module>1.5.4</version.powermock.module>
 		<version.powermock.mockito>1.5.4</version.powermock.mockito>
