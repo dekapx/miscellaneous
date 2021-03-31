@@ -10,7 +10,7 @@
 
     <properties>
         <java.version>12</java.version>
-        <guava.version>27.1-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <lombok.version>1.18.8</lombok.version>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
     </properties>
