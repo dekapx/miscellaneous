@@ -12,7 +12,7 @@
 		<joda-time.version>2.7</joda-time.version>
 		<commons-collections4.version>4.1</commons-collections4.version>
 
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<version.mockito>1.10.19</version.mockito>
 		<version.powermock.module>1.6.2</version.powermock.module>
 		<version.powermock.mockito>1.6.2</version.powermock.mockito>
